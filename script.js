@@ -1,5 +1,21 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
+  // Show the supplied SVG mark alongside the wordmark in the header and footer.
+  document.querySelectorAll(".wordmark").forEach(wordmark => {
+    const logo = document.createElement("img");
+    logo.src = "logo.svg";
+    logo.alt = "";
+    logo.setAttribute("aria-hidden", "true");
+    logo.width = 36;
+    logo.height = 36;
+    logo.style.flex = "0 0 36px";
+    logo.style.display = "block";
+    wordmark.style.display = "inline-flex";
+    wordmark.style.alignItems = "center";
+    wordmark.style.gap = "9px";
+    wordmark.prepend(logo);
+  });
+
   const menuButton = document.querySelector(".menu-toggle");
   const menu = document.querySelector("#nav-links");
   const year = document.querySelector("#year");
