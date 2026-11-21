@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="brain-grad" x1="0" y1="56" x2="0" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44F6FF" />
+      <stop offset="55%" stop-color="#2CE0F7" />
+      <stop offset="100%" stop-color="#359FF2" />
+    </linearGradient>
+    <mask id="diagonal-gap">
+      <rect width="400" height="400" fill="#FFFFFF" />
+      <line x1="100" y1="140" x2="300" y2="260" stroke="#000000" stroke-width="40" />
+    </mask>
+  </defs>
+  <g fill="none" stroke="url(#brain-grad)" stroke-width="14" stroke-linejoin="miter" stroke-miterlimit="4">
+    <path d="M 182 189.2 L 182 68.4 L 164 57.6 L 100 96 L 100 140 L 68 159.2 L 68 240.8 L 100 260 L 100 304 L 164 342.4 L 182 331.6" />
+    <path d="M 218 210.8 L 218 331.6 L 236 342.4 L 300 304 L 300 260 L 332 240.8 L 332 159.2 L 300 140 L 300 96 L 236 57.6 L 218 68.4" />
+    <g mask="url(#diagonal-gap)">
+      <path d="M 164 342.4 L 182 331.6 L 182 189.2" />
+      <path d="M 236 57.6 L 218 68.4 L 218 210.8" />
+    </g>
+    <line x1="100" y1="140" x2="300" y2="260" />
+    <line x1="100" y1="140" x2="182" y2="90.8" />
+    <line x1="300" y1="260" x2="218" y2="309.2" />
+    <line x1="182" y1="309.2" x2="124" y2="274.4" stroke-linecap="round" />
+    <line x1="218" y1="90.8" x2="276" y2="125.6" stroke-linecap="round" />
+    <line x1="100" y1="260" x2="144" y2="233.6" />
+    <line x1="300" y1="140" x2="256" y2="166.4" />
+  </g>
+  <g fill="url(#brain-grad)">
+    <circle cx="144" cy="233.6" r="12.5" />
+    <circle cx="256" cy="166.4" r="12.5" />
+  </g>
+</svg>
